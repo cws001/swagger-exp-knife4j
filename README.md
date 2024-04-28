@@ -35,9 +35,9 @@ springboot-exp-knif4j 主要用于Swagger接口分析 ，批量测试接口是�
 - [ ] 支持扫描结果生成
 
 	- `result_ApiScanSummary.txt`	接口测试结果汇总（是一直累加的）
-- `result_RequestDeny.txt`	自动化测试时，请求被拒绝的接口
+	- `result_RequestDeny.txt`	自动化测试时，请求被拒绝的接口
 	- `result_sensitive.txt`	存在敏感参数的接口
-- `result_UnAuthorized.txt`	可能存在未授权的接口
+	- `result_UnAuthorized.txt`	可能存在未授权的接口
 
 # 🛸 三、 工具界面：
 
