@@ -169,4 +169,4 @@ python3 swagger-exp-knife4j.py -u http://example.com/swagger-resources
 如果您下载使用即表明您信任本工具，在使用时造成的损失和伤害，我们不承担任何责任。使用本工具的过程中存在任何非法行为需自行承担相应后果，我们将不承担任何法律及连带责任。您的下载、安装、使用等行为即视为您已阅读并同意上述协议的约束
 
 
-![Star History Chart](https://api.star-history.com/svg?repos=cws001/swagger-exp-knife4j&type=Date)](https://star-history.com/#cws001/swagger-exp-knife4j&Date)
+![Star History Chart](https://api.star-history.com/svg?repos=cws001/swagger-exp-knife4j&type=Date)
