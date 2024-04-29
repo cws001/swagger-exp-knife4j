@@ -6,6 +6,8 @@ springboot-exp-knif4j 主要用于Swagger接口分析 ，批量测试接口是�
 
 日常渗透过程中，经常会碰到Spring Boot搭建的微服务，当发现接口文档泄露时，手工测试API接口未授权工作量较大，于是参考了工具 [springboot-exp]:https://github.com/lijiejie/swagger-exp 的原理，开发了一款基 于Knife4j 的 Swagger 接口自动化测试未授权工具，较其他自动化测试工具而言，本工具增加了参数支持，优化了用户体验，改进了Swagger测试界面，并且支持自定义设置全局请求头参数。
 
+工具适用于 windos、linux ，适用于 Swagger API v2、v3。
+
 **当前工具版本号：V1.1--2024/05/01**
 
 # 📝 二、功能支持
@@ -162,7 +164,21 @@ python3 swagger-exp-knife4j.py -u http://example.com/v2/api-docs
 python3 swagger-exp-knife4j.py -u http://example.com/swagger-resources
 ```
 
-# 🖐 六、免责声明
+# 🖐 六、其他
+### 1、linux下 chrome 的安装
+
+```
+//1、将Google Chrome的官方仓库添加到系统中：
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+//2、安装Google Chrome：
+sudo dpkg -i google-chrome-stable_current_amd64.deb
+//3、如果遇到任何依赖问题，执行以下命令修复：
+sudo apt-get install -f
+//4、而后指定参数 -c 看能否正常生成禁用CORS请求的chrome
+python3 swagger-exp-knife4j.py -c
+```
+
+# 🖐 七、免责声明
 
 
 
