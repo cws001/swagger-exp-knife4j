@@ -128,7 +128,7 @@ Knife4j 界面功能的使用参考官方文档：https://doc.xiaominfo.com
 
 ### 2、扫描 swagger-ui.html
 
-扫描一个API集，爬取目标 `api-doc `内容，保存到本地存为 `api-docs.json`，打开 Knife4j 界面
+扫描一个API集，工具自动爬取目标 `api-doc `内容，并保存到本地存为 `api-docs.json`，而后自动打开 Knife4j 界面
 
 ```
 python3 swagger-exp-knife4j.py -u http://example.com/swagger-ui.html
@@ -138,7 +138,7 @@ python3 swagger-exp-knife4j.py -u http://example.com/swagger-ui.html
 
 ### 2、只打开 Chrome 生成页面，不做任何扫描
 
-只打开禁用 CORS 的 chrome， 把本地 `api-docs.json` 文件渲染到 Knife4j 界面进行测试。（所以当网站接口内容无法爬取到时，可以手动把网站 /api-docs 覆盖掉`api-docs.json`，然后 ` -c` 打开 Chrome）
+只打开禁用 CORS 的 chrome， 会把目录下的 `api-docs.json` 文件渲染到 Knife4j 界面供你测试。（所以当网站路径比较花哨，无法爬取到目标 api-doc 时，可以手动把网站 /api-docs 内容保存到本地的`api-docs.json`，然后 ` -c` 打开 Chrome）
 
 ```
 python3 swagger-exp-knife4j.py -c
@@ -148,7 +148,7 @@ python3 swagger-exp-knife4j.py -c
 
 ### 4、扫描 /api-docs
 
-扫描一个API集，分析接口是否存在未授权，疑似存在未授权的接口保存在 `result_UnAuthorized.txt`，打开 Knife4j 界面
+扫描一个API集，工具自动分析接口是否存在未授权，疑似存在未授权的接口保存在 `result_UnAuthorized.txt`，而后自动打开 Knife4j 界面
 
 ```
 python3 swagger-exp-knife4j.py -u http://example.com/v2/api-docs
@@ -156,7 +156,7 @@ python3 swagger-exp-knife4j.py -u http://example.com/v2/api-docs
 
 ### 3、扫描 /swagger-resources
 
-扫描所有API集，并分析接口是否存在未授权，疑似存在未授权的接口保存在 `result_UnAuthorized.txt`，打开 Knife4j 界面
+扫描所有API集，工具自动分析接口是否存在未授权，疑似存在未授权的接口保存在 `result_UnAuthorized.txt`，而后自动打开 Knife4j 界面
 
 ```
 python3 swagger-exp-knife4j.py -u http://example.com/swagger-resources
